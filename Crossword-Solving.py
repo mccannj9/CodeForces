@@ -17,7 +17,19 @@ def main():
     lengths = [int(x) for x in data[0]]
     s = data[1][0]
     t = data[2][0]
-    print(grab_substrings(s))
+    subs = grab_substrings(s)
+    subs.sort(key=len, reverse=True)
+    print(subs)
+    print(t)
+
+    for val in subs:
+        if t.find(val) >= 0:
+            pos = t.find(val) + 1
+            num = len(s) - len(val)
+            print(list(range(pos + 1, pos + num + 1)))
+            break
+
+
 
 
 if __name__ == '__main__':
