@@ -2,8 +2,12 @@
 
 # http://codeforces.com/problemset/problem/822/A
 # Problem name ::: A. I'm bored with life
-# submission number 
+# submission number 28275402 (Accepted)
 
+# given positive numbers n,m: GCD(n!, m!) must be
+# simply min(n,m)! because the factorial of the smaller
+# number must be the largest divisor of the factorial
+# of both numbers
 
 def factorial(n):
     value = 1
