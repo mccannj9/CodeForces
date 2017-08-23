@@ -16,7 +16,10 @@ def level_generation(n):
     # x^2 + x <= 2n
     # (x + 1/2)^2-1/4 <= 2n
     # x <= sqrt(2n+1/4)-1/2
+    z = 2*n+1/4
     quad_solv = sqrt(2*n+1/4)-1/2
+    print(z)
+    print(quad_solv)
     x = floor(quad_solv)
     y = ceil(quad_solv)
 
